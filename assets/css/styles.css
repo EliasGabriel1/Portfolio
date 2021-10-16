@@ -964,6 +964,60 @@ img {
     padding: .25rem .5rem .5rem 0;
 }
 
+#input {
+    background: transparent;
+    border: none;
+    -webkit-user-modify: read-only;
+}
+
+#input::selection,
+#input2::selection {
+    background: transparent;
+    color: black;
+}
+
+#input:focus-visible,
+#input2:focus-visible {
+    outline-offset: unset !important;
+    outline: unset !important;
+}
+
+#input:focus-visible,
+#input:focus {
+    border: none
+}
+
+#input2 {
+    background: transparent;
+    border: none;
+    -webkit-user-modify: read-only;
+}
+
+#input2:focus-visible,
+#input2:focus {
+    border: none
+}
+
+#execCopy,
+#execCopy2 {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.dark-theme #execCopy,
+.dark-theme #execCopy2 {
+    background: #ffffffde;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.dark-theme #input::selection,
+.dark-theme #input2::selection {
+    background: transparent;
+    color: white;
+}
+
 
 /*==================== FOOTER ====================*/
 
